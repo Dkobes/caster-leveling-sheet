@@ -6,6 +6,6 @@
 
 ## Usage-
 
-## Credits- Collaborators: Jonathan Shenkir, Tyler Caelwaerts
+## Credits- Collaborators: Danyelle Kobes, Jonathan Shenkir, and Tyler Caelwaerts
 
 ## Refer to License in Repository. 
