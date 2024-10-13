@@ -35,6 +35,13 @@
 .carousel-caption {
     top: 0%;
     font-size: larger;
+
+}
+
+h4 {
+    color: yellow;
+    font-size: 500px;
+
 }
 
 .carousel-inner img {
@@ -45,5 +52,5 @@
 footer {
     text-align: center;
     font-size: larger;
-    
+    background-color: black;
 }
