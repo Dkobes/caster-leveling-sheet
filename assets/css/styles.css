@@ -39,9 +39,24 @@
 }
 
 h4 {
-    color: yellow;
-    font-size: 500px;
+    padding-top: 10%;
+}
 
+#wizard {
+    color: yellow
+
+}
+
+#healer {
+    color: red;
+}
+
+#druid {
+    color: green;
+}
+
+#bard {
+    color: aqua;
 }
 
 .carousel-inner img {
