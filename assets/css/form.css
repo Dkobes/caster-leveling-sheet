@@ -1,0 +1,26 @@
+.experiencebar {
+    display: flex;
+    align-items: center;
+    float: center;
+}
+
+.level-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    float: center;
+}
+
+.experiencefill {
+    background-color: rgb(170, 31, 31);
+    height: 20px;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.experiencebar {
+    width: 100%;
+    background-color: #243bcd;
+    border-radius: 5px;
+    overflow: hidden;
+}
