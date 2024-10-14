@@ -1,32 +1,30 @@
-let user = {
-    level: 1,
-    experience: 0,
-    experienceToLevelUp: 5
-}
+let currentXP = localStorage.getItem("currentXP") ? parseInt(localStorage.getItem("currentXP")) : 0;
+let currentLevel = localStorage.getItem("currentLevel") ? parseInt(localStorage.getItem("currentLevel")) : 1;
+const xpToNextLevel = 10;
 
-function addxp(points) {
-    user.experience += points;
-    if (
-        user.experience >= user.experienceToLevelUp
-    ) {
-            levelUp();
-        }
-}
-
-function levelUp() {
-    user.level += 1;
-    user.experience = 0;
-    user.experienceToLevelUp *= 2; 
-    console.log(`Congratulations! You've leveled up to Level ${user.level}!`)
-}
-
-document.getElementById('addxp').addEventListener('click', () =>{
-    addxp(1);
-    updateUI();
+document.getElementById("addxp").addEventListener("click", function() {
+    currentXP += 1;
+    updateExperienceBar();
 })
 
-function updateUI() {
-    document.getElementById('level').textContent = user.level;
-    document.getElementById('experience').textContent = user.experience;
-    document.getElementById('experienceToLevelUp').textContent =user.experienceToLevelUp;
+function updateExperienceBar() {
+    const experienceFill = document.querySelector(".experienceFill");
+    const classProgress = document.getElementById("classProgress");
+
+    let percentage = (currentXP / xpToNextLevel) * 100; 
+
+    if (currentXP >= xpToNextLevel) {
+        currentLevel++;
+        currentXP = 0;
+        percentage = 0;
+    }
+
+    experienceFill.style.width = percentage + "%";
+    classProgress.children[0].textContent = "Current Level: " + currentLevel;
+    classProgress.children[1].textContent = "XP needed to next Level: " + (xpToNextLevel - currentXP);
+
+    localStorage.setItem("currentLevel", currentLevel);
+    localStorage.setItem("currentXP", currentXP);
 }
+
+updateExperienceBar();
