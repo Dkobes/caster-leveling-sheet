@@ -46,6 +46,9 @@ header {
     transition: width 0.5s;
 }
 
-h3 {
-    margin-right: 10px;
+
+footer {
+    text-align: center;
+    font-size: larger;
+    background-color: black;
 }
