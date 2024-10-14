@@ -40,54 +40,42 @@
 
 .wizard {
     color: rgb(255, 106, 0);
-
+    font-size: 25px;
 }
+
 #wizard {
-    color: yellow
-
-}
-
-#healer {
-    color: red;
-}
-
-#druid {
-    color: green;
-}
-
-#bard {
-    color: aqua;
-}
-
-.wizard2 {
     color: rgb(255, 106, 0);
+    font-size: 50px;
 }
 
 .healer {
     color: red;
-    font-size: 500px;
+    font-size: 25px;
 }
 
-.healer2 {
+#healer {
     color: red;
+    font-size: 50px;
 }
 
 .druid {
     color: rgb(181, 50, 50);
-    font-size: 500px;
+    font-size: 25px;
 }
 
-.druid2 {
-    color: rgb(181, 50, 50);
+#druid {
+    color: green;
+    font-size: 50px;
 }
 
 .bard {
     color: rgb(0, 168, 224);
-    font-size: 500px;
+    font-size: 25px;
 }
 
-.bard2 {
+#bard {
     color: rgb(0, 168, 224);
+    font-size: 50px;
 }
 
 .carousel-inner img {
