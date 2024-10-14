@@ -9,18 +9,19 @@
 </head>
 
 <body>
-
-    <div class="experiencebar">
-    <!--    <div class="level-container"> -->
-            <h3>Level 1</h3>
-            <div class="experiencefill" style="width: 50%";></div>
-  <!--  </div> -->
+    <header>
+        <h1 style="font-size:100px;">Wizard</h1>
+    </header>
+    <div class="experienceBar">
+        <div class="experienceFill" style="width: 100%";></div>
     </div>
-    <button id="addxp">Add XP</button>
-        <section id="wizard">
-        <h1>Wizard</h2>
+    <button type="button" class="btn btn-warning btn-lg" id="addxp">Add XP</button>
+    <ul class="list-group list-group-horizontal" id="classProgress">
+        <li class="list-group-item">Current Level:</li>
+        <li class="list-group-item">Xp needed to next Level:</li>
+    </ul>   
+    <section id="wizard">
             <p>Excels in manipulating elemental and arcane forces.</p>
-            <a href="index.html">Home</a> 
             <!--add leveling system--buttons(done) and Current Level-->
             <!--Add spell sheet that shows all spells for current level-->
         </section>
@@ -59,6 +60,21 @@
         <button id="addxp">Add XP</button>
     </div>
 -->
+<footer>
+    <nav class="topnav">
+       <a href="index.html">
+        <button type="button" class="btn btn-secondary btn-lg">Home</button>
+        </a>
+      <a href="index2.html">
+      <button type="button" class="btn btn-warning btn-lg">Wizard</button>
+      <button type="button" class="btn btn-danger btn-lg">Healer</button>
+      <!-- make druid button brown -->
+      <button type="button" class="btn btn-success btn-lg">Druid</button>
+      <button type="button" class="btn btn-primary btn-lg">Bard</button>
+      </a>
+    
+    </nav>
+  </footer>
 
 
 <script src="./assets/js/form.js"></script>
