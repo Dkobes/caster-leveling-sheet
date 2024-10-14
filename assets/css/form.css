@@ -26,6 +26,11 @@ header {
     width: 100%;
 }
 
+#resetxp {
+    align-items: center;
+    width: 100%;
+}
+
 .list-group {
  display: flex;
  justify-content: center;
