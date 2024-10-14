@@ -1,9 +1,24 @@
 header {
     text-align: center;
     background-color: black;
-    color: yellow;
     margin: 5px; 
     
+}
+
+#wizard-h {
+    color: yellow;
+}
+
+#healer-h {
+    color: red
+}
+
+#druid-h {
+    color: green
+}
+
+#bard-h {
+    color:aqua
 }
 
 #addxp {
@@ -24,7 +39,7 @@ header {
     align-items: center;
     float: center;
     width: 100%;
-    background-color: #243bcd;
+    background-color: silver;
     overflow: hidden;
     padding: 15px;
     text-align: center;
