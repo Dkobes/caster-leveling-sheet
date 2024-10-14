@@ -40,42 +40,42 @@
 
 .wizard {
     color: rgb(255, 106, 0);
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #wizard {
     color: rgb(255, 106, 0);
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .healer {
     color: red;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #healer {
     color: red;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .druid {
-    color: rgb(181, 50, 50);
-    font-size: 25px;
+    color: green;
+    font-size: 35px;
 }
 
 #druid {
     color: green;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .bard {
     color: rgb(0, 168, 224);
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #bard {
     color: rgb(0, 168, 224);
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .carousel-inner img {
