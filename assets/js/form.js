@@ -5,7 +5,7 @@ const xpToNextLevel = 10;
 document.getElementById("addxp").addEventListener("click", function() {
     currentXP += 1;
     updateExperienceBar();
-})
+});
 
 function updateExperienceBar() {
     const experienceFill = document.querySelector(".experienceFill");
