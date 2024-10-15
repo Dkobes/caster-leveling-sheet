@@ -50,6 +50,10 @@ header {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 .level-container {
     display: flex;
     align-items: center;
@@ -75,4 +79,6 @@ footer {
     text-align: center;
     font-size: larger;
     background-color: black;
+    margin: 5px;
+    
 }
