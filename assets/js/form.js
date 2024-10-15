@@ -1,47 +1,47 @@
-const classesData = JSON.parse(localStorage.getItem("classesData")) || {
-    Wizard: { level: 1, xp: 0 },
-    Healer: { level: 1, xp: 0 },
-    Druid: { level: 1, xp: 0},
-    Bard: { level: 1, xp: 0},
-}
-
+let currentXP = localStorage.getItem('currentXP') ? parseInt(localStorage.getItem('currentXP')) : 0;
+let currentLevel = localStorage.getItem('currentLevel') ? parseInt(localStorage.getItem('currentLevel')) : 1;
 const xpToNextLevel = 10;
 const maxLevel = 6;
 
-function updateExperienceBar(className) {
-    const experienceFill = document.querySelector(`.${className} .experienceFill`);
-    const classProgress = document.getElementById(`${className}Progress`);
+document.getElementById("addxp").addEventListener("click", function () {
+    currentXP += 1;
+    updateExperienceBar();
 
-    let currentXP = classesData[className].xp;
-    let currentLevel = classesData[className].level;
+})
+
+function updateExperienceBar() {
+    const experienceFill = document.querySelector(".experienceFill");
+    const classProgress = document.getElementById("classProgress");
 
     let percentage = (currentXP / xpToNextLevel) * 100;
-
-    if (currentXP >= xpToNextLevel && currentLevel < maxLevel) {
-        currentLevel++;
-        currentXP = 0;
-        percentage = 0;
+    
+    if (currentLevel < 6) {
+        if (currentXP >= xpToNextLevel) {
+            currentLevel++;
+            currentXP = 0;
+            percentage = 0;
+        }
+    } else {
+        percentage = 100;
+        addxp.disabled = true;
     }
 
     experienceFill.style.width = percentage + "%";
+
     classProgress.children[0].textContent = "Current Level: " + currentLevel;
     classProgress.children[1].textContent = "XP needed to next Level: " + (xpToNextLevel - currentXP);
 
-    classesData[className].level = currentLevel;
-    classesData[className].xp = currentXP;
-    localStorage.setItem("classesData", JSON.stringify(classesData));
+    localStorage.setItem('currentXP', currentXP);
+    localStorage.setItem('currentLevel', currentLevel); 
+
 }
 
-document.querySelectorAll(".addxp").forEach(button => {
-    button.addEventListener("click", function() {
-        const className = this.dataset.class;
-        if (classesData[className]) {
-            classesData[className].xp += 1;
-            updateExperienceBar(className);
-        }
-    })
+updateExperienceBar();
+
+document.getElementById("resetxp").addEventListener("click", function() {
+    currentLevel = 1;
+    currentXP = 0;
+    localStorage.setItem("currentLevel", currentLevel);
+    localStorage.setItem("currentXP", currentXP);
+    updateExperienceBar();
 })
-
-for (const className in classesData) {
-    updateExperienceBar(className);
-}
