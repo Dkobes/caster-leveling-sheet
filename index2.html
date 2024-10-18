@@ -136,7 +136,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="weapon-shortLabel">weapon-short</h5>
+        <h5 class="modal-title" id="weapon-shortLabel">Weapon Short</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -280,7 +280,7 @@
         <p> <b>Type:</b> Verbal</p>
         <p> <b>School:</b> Sorcery </p>
         <p> <b>Range:</b> 20' </p>
-        <p> <b>Incantation:</b> “My power shoves thee” </p>
+        <p> <b>Incantation:</b> “My power shoves thee” x3 </p>
         <p> <b>Materials:</b> None </p>
         <p> <b>Effects:</b> Target player is moved back 20’ in a straight line away from the caster. Works on Stopped players. </p>
       </div>
@@ -469,11 +469,836 @@
     </div>
   </div>
 </div>
-
  <!-- Modals level 3 -->
+ <div class="modal fade" id="dispel-magic" tabindex="-1" aria-labelledby="dispel-magicLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dispel-magicLabel">Dispel Magic</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Sorcery </p>
+        <p> <b>Range:</b> 20' </p>
+        <p> <b>Incantation:</b> “By my power I dispel that magic” x3 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> All Enchantments on target are removed. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="dragged-below" tabindex="-1" aria-labelledby="dragged-belowLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dragged-belowLabel">Dragged Below</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Death </p>
+        <p> <b>Range:</b> 20' </p>
+        <p> <b>Incantation:</b> “Death comes for thee from below” x3 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Target Stopped player dies. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="extension" tabindex="-1" aria-labelledby="extensionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="extensionLabel">Extension</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Meta-Magic </p>
+        <p> <b>School:</b> Neutral </p>
+        <p> <b>Range:</b>  </p>
+        <p> <b>Incantation:</b> “Extension” </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Verbal becomes 50’. Only works on Verbals with a range of 20’. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="greater-mend" tabindex="-1" aria-labelledby="greater-mendLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="greater-mendLabel">Greater Mend</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Sorcery </p>
+        <p> <b>Range:</b> Touch </p>
+        <p> <b>Incantation:</b> “Return this <object name> to its former glory” x5 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Will repair a destroyed item or restore all armor points in one location. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="hold-person" tabindex="-1" aria-labelledby="hold-personLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hold-personLabel">Hold Person</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Command </p>
+        <p> <b>Range:</b> 20' </p>
+        <p> <b>Incantation:</b> “I command thee to stop” x3 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Target player becomes Stopped for 30 seconds. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="iceball" tabindex="-1" aria-labelledby="iceballLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="iceballLabel">Iceball</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Magic Ball</p>
+        <p> <b>School:</b> Subdual </p>
+        <p> <b>Range:</b> Ball </p>
+        <p> <b>Incantation:</b> “The strength of ice is mine to evoke” x3 </p>
+        <p> <b>Materials:</b> White Magic Ball </p>
+        <p> <b>Effects:</b> Target player becomes Frozen for 60 seconds. Engulfing. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="lightning-bolt" tabindex="-1" aria-labelledby="lightning-boltLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lightning-boltLabel">Lightning-Bolt</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Magic Ball</p>
+        <p> <b>School:</b> Flame </p>
+        <p> <b>Range:</b> Ball </p>
+        <p> <b>Incantation:</b> “The flame of storms is mine to evoke” x3  </p>
+        <p> <b>Materials:</b> Yellow Magic Ball </p>
+        <p> <b>Effects:</b> Effects: A player struck is subject to an Engulfing Stopped effect for 60 seconds.In addition Lightning Bolt will have one of the following effects on the object first struck: </p>
+            <p> 1. A weapon hit is destroyed </p>
+            <p> 2.  Armor hit with Armor Points remaining is subject to Armor Breaking. </p>
+            <p> 3.  A player hit receives a Wound in that hit location. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ravage" tabindex="-1" aria-labelledby="ravageLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ravageLabel">Ravage</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Death </p>
+        <p> <b>Range:</b> 20' </p>
+        <p> <b>Incantation:</b> “Death shall ravage thy flesh and make thee fragile” x3 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Target player is Fragile. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="shatter-weapon" tabindex="-1" aria-labelledby="shatter-weaponLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shatter-weaponLabel">Shatter Weapon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Sorcery </p>
+        <p> <b>Range:</b> 20' </p>
+        <p> <b>Incantation:</b> “My power destroys thy [type of weapon]” x3 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Target weapon is destroyed. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="throw" tabindex="-1" aria-labelledby="throwLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="throwLabel">Throw</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> <b>Type:</b> Verbal</p>
+        <p> <b>School:</b> Sorcery </p>
+        <p> <b>Range:</b> 20' </p>
+        <p> <b>Incantation:</b> “My power throws thee” x3 </p>
+        <p> <b>Materials:</b> None </p>
+        <p> <b>Effects:</b> Target player is moved back 50’ in a straight line away from the caster. Works on Stopped players. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Modals level 4 -->
-   <!-- Modals level 5 -->
+  <div class="modal fade" id="destroy-armor" tabindex="-1" aria-labelledby="destroy-armorLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="destroy-armorLabel">Destroy Armor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Death </p>
+          <p> <b>Range:</b> 20' </p>
+          <p> <b>Incantation:</b> “Death destroys thy [hit location] armor” x3” </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Armor on target Hit Location is subjected to Armor Destroying. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="dimensional-rift" tabindex="-1" aria-labelledby="dimensional-riftLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="dimensional-riftLabel">Dimensional Rift</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Sorcery </p>
+          <p> <b>Range:</b> 20' </p>
+          <p> <b>Incantation:</b> “The power of the aether consumes thee” x3 </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Target Insubstantial player dies. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="fireball" tabindex="-1" aria-labelledby="fireballLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fireballLabel">Fireball</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Magic Ball</p>
+          <p> <b>School:</b> Flame </p>
+          <p> <b>Range:</b> Ball </p>
+          <p> <b>Incantation:</b>  “The flame of fire is mine to evoke” x3 </p>
+          <p> <b>Materials:</b> Red Magic Ball </p>
+          <p> <b>Effects:</b> Effects: Fireball will have one of the following effects on the object first struck: </p>
+          <p> 1. A weapon hit is destroyed </p>
+          <p> 2. A shield hit is subject to Shield Destroying </p>
+          <p> 3. Armor hit with Armor Points remaining is subject to Armor Destroying. </p>
+          <p> 4. A player hit receives a Wounds Kill Wound to that hit location. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="icy-blast" tabindex="-1" aria-labelledby="icy-blastLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="icy-blastLabel">Icy Blast</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Sorcery </p>
+          <p> <b>Range:</b> 20' </p>
+          <p> <b>Incantation:</b> “My power makes thee frozen” x3 </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Target player becomes Frozen for 30 seconds. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="shatter" tabindex="-1" aria-labelledby="shatterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="shatterLabel">Shatter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Sorcery </p>
+          <p> <b>Range:</b> 20' </p>
+          <p> <b>Incantation:</b> “My power shatters thy body” x3 </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Target Frozen player dies. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="suppress-aura" tabindex="-1" aria-labelledby="suppress-auraLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="suppress-auraLabel">Suppress Aura</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Command </p>
+          <p> <b>Range:</b> 20' </p>
+          <p> <b>Incantation:</b> “I command thee powerless” x3 </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Target is Suppressed for 30 seconds </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="swift" tabindex="-1" aria-labelledby="swiftLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="swiftLabel">Swift</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Meta-Magic</p>
+          <p> <b>School:</b> Neutral </p>
+          <p> <b>Range:</b>  </p>
+          <p> <b>Incantation:</b> “Swift” </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Magic and abilities require only a single iteration of the incantation.For multi-line Incantations use the last line. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="vampirism" tabindex="-1" aria-labelledby="vampirismLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vampirismLabel">Vampirism</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Enchantment</p>
+          <p> <b>School:</b> Death </p>
+          <p> <b>Range:</b> Touch: Others </p>
+          <p> <b>Incantation:</b> “Thy hunger can never be sated” x3 </p>
+          <p> <b>Materials:</b> Yellow strip and White strip </p>
+          <p> <b>Effects:</b> Player gains Adrenaline unlimited (ex), is Immune to Death, and is Cursed. Bearer’s Adrenaline ability will work through their Cursed State. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="wounding" tabindex="-1" aria-labelledby="woundingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="woundingLabel">Wounding</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Death </p>
+          <p> <b>Range:</b> 20' </p>
+          <p> <b>Incantation:</b> “Death strikes off thy [left/right] [arm/leg]” x3 </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Target hit location on target player is Wounded. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!-- Modals level 5 -->
+   <div class="modal fade" id="ambulant" tabindex="-1" aria-labelledby="ambulantLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ambulantLabel">Ambulant</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Meta-Magic</p>
+          <p> <b>School:</b> Neutral </p>
+          <p> <b>Range:</b>  </p>
+          <p> <b>Incantation:</b> “Ambulant” </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> An incantation may be said while moving. May be cast while moving. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   <div class="modal fade" id="contagion" tabindex="-1" aria-labelledby="contagionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contagionLabel">Contagion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Enchantment</p>
+          <p> <b>School:</b> Death </p>
+          <p> <b>Range:</b> Touch: Others </p>
+          <p> <b>Incantation:</b> “May thou bear this plague to all” x3 </p>
+          <p> <b>Materials:</b> Red Strip </p>
+          <p> <b>Effects:</b> All melee weapons wielded by player are Wounds Kill. Bearer is Fragile </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="weapon-long" tabindex="-1" aria-labelledby="weapon-longLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="weapon-longLabel">Weapon Long</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Neutral</p>
+          <p> <b>School:</b> Neutral </p>
+          <p> <b>Range:</b>  </p>
+          <p> <b>Incantation:</b> None </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> May wield one long weapon at a time for each instance purchased (but may carry extras). </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="phase-bolt" tabindex="-1" aria-labelledby="phase-boltLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="phase-boltLabel">Phase Bolt</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Magic Ball</p>
+          <p> <b>School:</b> Sorcery </p>
+          <p> <b>Range:</b> Ball </p>
+          <p> <b>Incantation:</b> “The power of sorcery is mine to evoke” x3 </p>
+          <p> <b>Materials:</b> Grey Magic Ball </p>
+          <p> <b>Effects:</b> This Magic Ball does not interact with other ongoing Magic or Abilities. Example: This Magic Ball is not stopped by Stoneskin, Protection from Projectiles, and does not trigger the effects of Troll Blood, Undead Minion, Magic Ball Block, or similar Magic or Abilities. Will have one of the following effects: </p>
+           <p> 1. A weapon hit is destroyed </p>
+           <p> 2. Armor hit with Armor Points remaining is subject to Armor Breaking. </p>
+           <p> 3. A player hit receives a Wound in that hit location. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pyrotechnics" tabindex="-1" aria-labelledby="pyrotechnicsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pyrotechnicsLabel">Pyrotechnics</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Flame </p>
+          <p> <b>Range:</b> 50' </p>
+          <p> <b>Incantation:</b> “I call upon the element of flame to destroy thy belongings” x3 </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b>  All shields and weapons carried or worn by the target player are destroyed. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="steal-life-essence" tabindex="-1" aria-labelledby="steal-life-essenceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="steal-life-essenceLabel">Steal Life Essence</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Verbal</p>
+          <p> <b>School:</b> Death </p>
+          <p> <b>Range:</b> Touch </p>
+          <p> <b>Incantation:</b> “Steal Life” </p>
+          <p> <b>Materials:</b> None </p>
+          <p> <b>Effects:</b> Caster may heal a Wound or instantly Charge an ability. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="void-touched" tabindex="-1" aria-labelledby="void-touchedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="void-touchedLabel">Void Touched</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Enchantment</p>
+          <p> <b>School:</b> Sorcery </p>
+          <p> <b>Range:</b> Touch: Others </p>
+          <p> <b>Incantation:</b> “Embrace the old ones and surrender thyself” x3 </p>
+          <p> <b>Materials:</b> Red strip and White strip </p>
+          <p> <b>Effects:</b> Melee weapons wielded by bearer are Armor Breaking. Bearer may use Shadow Step 1/Refresh Charge x30 (ex), Steal Life Essence unlimited (ex), and is unaffected by magic from the Sorcery, Spirit, and Death Schools. May still benefit from their own Steal Life Essence. Player is Cursed. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ward-self" tabindex="-1" aria-labelledby="ward-selfLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ward-selfLabel">Ward Self</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> <b>Type:</b> Enchantment</p>
+          <p> <b>School:</b> Protection </p>
+          <p> <b>Range:</b> Self </p>
+          <p> <b>Incantation:</b> “The power of magic defends me” x3 </p>
+          <p> <b>Materials:</b> White Strip </p>
+          <p> <b>Effects:</b> Resistant to all effects from the next source which would inflict a Wound, Death, or State. Does not trigger against effects cast by the player. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Modals level 6 -->
+   <div class="modal fade" id="battlemage" tabindex="-1" aria-labelledby="battlemageLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="battlemageLabel">Battlemage</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Archetype </p>
+            <p> <b>School:</b> Neutral </p>
+            <p> <b>Range:</b> </p>
+            <p> <b>Incantation:</b> None </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Use of Ambulant becomes unlimited. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="elemental-barrage" tabindex="-1" aria-labelledby="elemental-barrageLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="elemental-barrageLabel">Elemental Barrage</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Verbal</p>
+            <p> <b>School:</b> Sorcery </p>
+            <p> <b>Range:</b> Self </p>
+            <p> <b>Incantation:</b> “I am filled with the power of magic” </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Caster may use Magic Balls they are currently carrying by stating the name of the Magic Ball immediately prior to throwing the ball in place of the incantation. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="evoker" tabindex="-1" aria-labelledby="evokerLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="evokerLabel">Evoker</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Archetype </p>
+            <p> <b>School:</b> Neutral </p>
+            <p> <b>Range:</b> </p>
+            <p> <b>Incantation:</b> None </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Verbals purchased may only be of range Touch or Self. Elemental Barrage becomes Charge x10. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="finger-of-death" tabindex="-1" aria-labelledby="finger-of-deathLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="finger-of-deathLabel">Finger of Death</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Verbal</p>
+            <p> <b>School:</b> Death </p>
+            <p> <b>Range:</b> 20' </p>
+            <p> <b>Incantation:</b> “I call upon death to smite thee” x3 </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Target Player Dies. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="persistent" tabindex="-1" aria-labelledby="persistentLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="persistentLabel">Persistent</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Meta-Magic</p>
+            <p> <b>School:</b> Neutral </p>
+            <p> <b>Range:</b>  </p>
+            <p> <b>Incantation:</b> “Persistant” </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Enchantment returns with the user after respawning until it has been otherwise removed. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="protection-from-magic" tabindex="-1" aria-labelledby="protection-from-magicLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="protection-from-magicLabel">Protection from Magic</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Enchantment </p>
+            <p> <b>School:</b> Protection </p>
+            <p> <b>Range:</b> Touch: Others </p>
+            <p> <b>Incantation:</b> “I enchant thee with protection from magic” x3 </p>
+            <p> <b>Materials:</b> White Strip </p>
+            <p> <b>Effects:</b> Bearer is unaffected by magic from any school. Upon death the player is Cursed. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sphere-of-annihilation" tabindex="-1" aria-labelledby="sphere-of-annihilationLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sphere-of-annihilationLabel">Sphere of Annihilation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Magic Ball</p>
+            <p> <b>School:</b> Sorcery </p>
+            <p> <b>Range:</b> Ball </p>
+            <p> <b>Incantation:</b> “The power of void is mine to evoke” x3 </p>
+            <p> <b>Materials:</b> Black Magic Ball </p>
+            <p> <b>Effects:</b> Sphere of Annihilation will have one of the following effects on the object first struck: </p>
+             <p> A weapon hit is destroyed </p>
+             <p> A shield hit is subject to Shield Destroying </p>
+             <p> A player hit dies and is Cursed. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="shove" tabindex="-1" aria-labelledby="shoveLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="shoveLabel">shove</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Verbal</p>
+            <p> <b>School:</b> Sorcery </p>
+            <p> <b>Range:</b> 20' </p>
+            <p> <b>Incantation:</b> “My power shoves thee” </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Target player is moved back 20’ in a straight line away from the caster. Works on Stopped players. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="warlock" tabindex="-1" aria-labelledby="warlockLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="warlockLabel">Warlock</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Archetype</p>
+            <p> <b>School:</b> Neutral </p>
+            <p> <b>Range:</b>  </p>
+            <p> <b>Incantation:</b> None </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> Each Verbal purchased in the Death and Flame Schools gives double the uses. Example: </p>
+             <P> 1/Life Charge x3 becomes 2/life Charge x3 </P>
+             <p> 2/life becomes 4/life. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="warlock" tabindex="-1" aria-labelledby="warlockLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="warlockLabel">Warlock</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> <b>Type:</b> Verbal </p>
+            <p> <b>School:</b> Sorcery </p>
+            <p> <b>Range:</b> Touch </p>
+            <p> <b>Incantation:</b> “Spedoinkle” </p>
+            <p> <b>Materials:</b> None </p>
+            <p> <b>Effects:</b> All equipment carried by target player is repaired.All armor worn by target player is restored to full value. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
         </section>
         <section class="spell-index">
           <a href="index6.html">
